@@ -1,11 +1,14 @@
 package chapter8;
 
+import jdk.nashorn.internal.ir.CallNode;
+
 public class TextProcessor {
 
 
     public static void main(String[] arg){
         //countWords("I love Test Automation University");
         //reverseSring("Hello TAU");
+        addSpaces("HeyWorld!It'sMeLuongATuyen");
     }
 
     /**
@@ -36,8 +39,15 @@ public class TextProcessor {
     }
 
     public static void addSpaces(String text){
-        String[] modifiedText = new String[text];
+        StringBuilder modifiedText = new StringBuilder(text);
 
+        for (int i=0 ; i<modifiedText.length(); i++){
+            if(i!=0 && Character.isUppe rCase(modifiedText.charAt(i))){
+                modifiedText.insert(i, " ");
+                i++;
+            }
+        }
+        System.out.println(modifiedText);
     }
 }
 
