@@ -3,7 +3,7 @@ package chapter4;
 import java.util.Scanner;
 
 public class LetterSearch {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println("Enter some text:");
         Scanner scanner = new Scanner(System.in);
         String text = scanner.next();
@@ -26,3 +26,4 @@ public class LetterSearch {
         }
     }
 }
+

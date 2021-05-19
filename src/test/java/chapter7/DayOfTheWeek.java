@@ -11,4 +11,9 @@ For example, if the user inputs the number 1, your program should print “Monda
  */
 
 public class DayOfTheWeek {
+    public void main(String args[]){
+        int a = 10;
+        a += 2;
+        System.out.println(a);
+    }
 }
