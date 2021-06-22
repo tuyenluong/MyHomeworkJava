@@ -14,7 +14,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setup() {
-        WebDriverManager.chromedriver().driverVersion("88.0.4324.96").setup();
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/");
         homePage = new HomePage(driver);

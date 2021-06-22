@@ -1,4 +1,4 @@
-package Login;
+package SeleniumChapter4;
 
 import Pages.LoginPage;
 import Pages.SecureAreaPage;
@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage = homePage.clickFormAuthentication();
         loginPage.setUsernameField("tomsmith");
         loginPage.setPasswordField("SuperSecretPassword!");
-        SecureAreaPage secureAreaPage= loginPage.clickLoginButton();
+        SecureAreaPage secureAreaPage = loginPage.clickLoginButton();
         assertTrue(secureAreaPage.getAlertText().contains("You logged into a secure area!")
                 ,"Alert text in incorrect");
     }
