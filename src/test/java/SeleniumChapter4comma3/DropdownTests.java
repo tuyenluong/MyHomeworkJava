@@ -1,4 +1,4 @@
-package Dropdown;
+package SeleniumChapter4comma3;
 
 import Pages.DropdownPage;
 import SeleniumChapter4BaseTest.BaseTest;
@@ -14,7 +14,7 @@ public class DropdownTests extends BaseTest {
         DropdownPage dropdownPage = homePage.clickDropDown();
         String option = "Option 1";
         dropdownPage.selectFromDropDown(option);
-        List<String> selectedOptions = dropdownPage.getSelectedOption();
+        List<String> selectedOptions = dropdownPage.getSelectedOptions();
         assertEquals(selectedOptions.size(),1,"Incorrect number of selection");
         assertTrue(selectedOptions.contains(option),"Option not selected");
     }
